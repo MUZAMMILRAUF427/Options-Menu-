@@ -1,0 +1,78 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/titleAgeUnit"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/bg_card"
+            android:text="Age Unit"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <Spinner
+        android:id="@+id/ageUnitSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/titleAgeUnit"
+        app:layout_constraintEnd_toEndOf="@+id/titleAgeUnit"
+        app:layout_constraintTop_toBottomOf="@+id/titleAgeUnit" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/titleColor"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageUnitSpinner">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/bg_card"
+            android:text="Color"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <Spinner
+        android:id="@+id/colorSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/titleColor"
+        app:layout_constraintEnd_toEndOf="@+id/titleColor"
+        app:layout_constraintTop_toBottomOf="@+id/titleColor" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_input_background"
+        android:text="Save"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorSpinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>
